@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HERA</title>
+    
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./fav/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./fav/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- swiper css cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <!-- css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- js -->
+    <!-- defer 스크립트의 실행시점을 조정해줌 -->
+    <script src="./script/jquery-1.12.4.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script/script.js" defer></script>
+</head>
+<body>
+    <div id="wrap">
+        <section class="section banner">
+            <div class="container">
+                <!-- 헤더영역 -->
+                <header class="header-area">
+                    <div class="header-inner">
+                        <div class="header-left">
+                            <div class="pc_left">
+                                <!-- 고객서비스센터 -->
+                                <div class="icon">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3.92426C7.00286 3.92426 2.95238 7.96936 2.95238 12.9599C2.95238 17.9504 7.00286 21.9955 12 21.9955C16.9971 21.9955 21.0476 17.9504 21.0476 12.9599C21.0476 7.96936 16.9971 3.92426 12 3.92426ZM2 12.9599C2 7.44434 6.47714 2.97314 12 2.97314C17.5229 2.97314 22 7.44434 22 12.9599C22 18.4754 17.5229 22.9466 12 22.9466C6.47714 22.9466 2 18.4754 2 12.9599Z" fill="#1A1A1E"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2599 7.6225C10.4704 7.6225 9.83133 8.2607 9.83133 9.04918V10.317H8.87894V9.04918C8.87894 7.73569 9.94466 6.67139 11.2599 6.67139H12.7409C14.0561 6.67139 15.1218 7.73569 15.1218 9.04918V10.5862C15.1218 11.2168 14.8713 11.8217 14.4247 12.2677L12.8951 13.7952C12.6266 14.0625 12.4761 14.4258 12.4761 14.8044V16.6581H11.5237V14.8044C11.5237 14.1738 11.7751 13.5689 12.2218 13.1228L13.7513 11.5953C14.0189 11.3271 14.1694 10.9647 14.1694 10.5862V9.04918C14.1694 8.2607 13.5304 7.6225 12.7409 7.6225H11.2599Z" fill="#1A1A1E"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5237 19.8292V17.7158H12.4761V19.8292H11.5237Z" fill="#1A1A1E"/>
+                                    </svg>
+                                </div>
+                                <!-- 위치 -->
+                                <div class="icon">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.17457 5.89337C5.90694 7.06936 5.09846 8.81798 5.09846 11.1217C5.09846 12.7079 6.01679 14.6628 7.28771 16.5793C8.54435 18.4716 10.08 20.2334 11.1839 21.4127C11.7639 22.0314 12.713 22.0314 13.293 21.4127C14.3969 20.2334 15.9326 18.4716 17.1892 16.5793C18.4601 14.6628 19.3785 12.7079 19.3785 11.1217C19.3785 8.81798 18.57 7.06936 17.3023 5.89337C16.027 4.71299 14.2464 4.07015 12.2385 4.07015C10.2305 4.07015 8.44988 4.71299 7.17457 5.89337ZM6.42759 5.09036C7.93578 3.69168 9.99979 2.97314 12.2385 2.97314C14.4771 2.97314 16.5411 3.69168 18.0493 5.09036C19.5641 6.49452 20.4769 8.54592 20.4769 11.1217C20.4769 13.0546 19.3927 15.2442 18.1042 17.1848C16.8004 19.1495 15.2197 20.9618 14.0949 22.1619C13.081 23.2436 11.3959 23.2436 10.3821 22.1619C9.25723 20.9618 7.67655 19.1495 6.37268 17.1848C5.08419 15.2442 4 13.0546 4 11.1217C4 8.54592 4.91281 6.49452 6.42759 5.09036Z" fill="#1A1A1E"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2389 7.36067C10.7219 7.36067 9.49274 8.58822 9.49274 10.1032C9.49274 11.6181 10.7219 12.8457 12.2389 12.8457C13.7559 12.8457 14.985 11.6181 14.985 10.1032C14.985 8.58822 13.7559 7.36067 12.2389 7.36067ZM8.39428 10.1032C8.39428 7.98268 10.1156 6.26367 12.2389 6.26367C14.3622 6.26367 16.0835 7.98268 16.0835 10.1032C16.0835 12.2237 14.3622 13.9427 12.2389 13.9427C10.1156 13.9427 8.39428 12.2237 8.39428 10.1032Z" fill="#1A1A1E"/>
+                                    </svg>                                        
+                                </div>
+                                <!-- 언어설정 -->
+                                <div class="k">
+                                    <div class="text">KOREA</div>
+                                    <div class="k_icon">
+                                        <img src="./images/bottom.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 로고 -->
+                        <a href="#none" class="header-logo">
+                            <!-- svg 파일은 fill,stroke컬러 html에 지정되어있는지 확인 후 제거 -->
+                            <svg width="155" height="28" viewBox="0 0 155 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M148.599 27.8252H154.562L142.79 0.169922L137.054 0.177015C137.391 1.12747 136.802 2.97162 136.169 4.58172L126.712 27.8252H130.034L134.207 17.732H144.437L148.599 27.8252ZM135.159 15.4197L139.322 5.34775L143.48 15.4197H135.159Z" fill="#13130A"/>
+                                <path d="M52.4757 14.7849H64.5064V12.8024H52.4757V2.15239H66.0879V0.169922L46.0092 0.177015C46.0092 0.177015 46.6131 1.22322 46.6131 4.11358V27.8323H66.4653V25.8534H52.4721V14.7849H52.4757Z" fill="#13130A"/>
+                                <path d="M18.8494 12.8024H6.46645V0.177002H0C0 0.177002 0.603871 1.22321 0.603871 4.11357V27.8323H6.46645V15.0225H18.8494V27.8323H24.712V0.177002H18.8494V12.8024Z" fill="#13130A"/>
+                                <path d="M100.685 14.182C101.928 13.7919 103.208 13.2102 104.419 12.3201C108.751 9.12828 107.669 3.68801 104.8 1.88641C102.953 0.726716 101.127 0.169922 97.5036 0.169922H86.03C86.03 0.169922 86.6339 1.21613 86.6339 4.10649V27.8252H92.5109V14.9019H94.0601C94.1463 14.9019 94.247 14.9019 94.3584 14.9055C96.1017 15.0189 97.0543 15.5261 98.5388 17.4199L105.832 27.8252H111.802C111.802 27.8252 104.01 17.1397 103.363 16.3134C102.809 15.6006 101.928 14.5508 100.685 14.182ZM93.8552 12.9478H92.5109V2.10274H93.7761C95.8465 2.10274 98.8731 2.12757 100.426 4.41149C101.903 6.58546 101.411 9.12473 100.322 10.5752C98.9737 12.3768 97.464 12.9478 93.8552 12.9478Z" fill="#13130A"/>
+                            </svg> 
+                        </a>
+
+                        <div class="header-right">
+                            <div class="pc_right">
+                                <!-- 검색 -->
+                                <div class="icon">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.56811 4.98089C5.94551 4.98089 3.00908 7.91341 3.00908 11.5312C3.00908 15.149 5.94551 18.0815 9.56811 18.0815C13.1907 18.0815 16.1271 15.149 16.1271 11.5312C16.1271 7.91341 13.1907 4.98089 9.56811 4.98089ZM2 11.5312C2 7.35714 5.38849 3.97314 9.56811 3.97314C13.7477 3.97314 17.1362 7.35714 17.1362 11.5312C17.1362 15.7053 13.7477 19.0893 9.56811 19.0893C5.38849 19.0893 2 15.7053 2 11.5312Z" fill="#1A1A1E"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9719 16.2134L21.0264 22.2598L20.3119 22.9733L14.2574 16.9269L14.9719 16.2134Z" fill="#1A1A1E"/>
+                                    </svg>                                                                                
+                                </div>
+                                <!-- 회원 -->
+                                <div class="icon">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9058 4.02576C9.86837 4.02576 8.21673 5.6752 8.21673 7.7099C8.21673 9.7446 9.86837 11.394 11.9058 11.394C13.9432 11.394 15.5948 9.7446 15.5948 7.7099C15.5948 5.6752 13.9432 4.02576 11.9058 4.02576ZM7.16272 7.7099C7.16272 5.09416 9.28655 2.97314 11.9058 2.97314C14.525 2.97314 16.6488 5.09416 16.6488 7.7099C16.6488 10.3256 14.525 12.4467 11.9058 12.4467C9.28655 12.4467 7.16272 10.3256 7.16272 7.7099Z" fill="#1A1A1E"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4 18.7627C4 16.4375 5.88774 14.5522 8.21605 14.5522H15.5941C17.9224 14.5522 19.8102 16.4375 19.8102 18.7627V22.4468C19.8102 22.7374 19.5741 22.9731 19.2832 22.9731H4.52701C4.2361 22.9731 4 22.7374 4 22.4468V18.7627ZM8.21605 15.6049C6.46955 15.6049 5.05401 17.0185 5.05401 18.7627V21.9205H18.7562V18.7627C18.7562 17.0185 17.3406 15.6049 15.5941 15.6049H8.21605Z" fill="#1A1A1E"/>
+                                    </svg>                                        
+                                </div>
+                                <!-- 장바구니 -->
+                                <div class="icon">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.93486 6.44251C5.04074 6.30415 5.20633 6.22314 5.38092 6.22314H21.1505C21.3251 6.22314 21.4907 6.30415 21.5966 6.44251C21.7036 6.582 21.7397 6.76197 21.6946 6.93071L19.4418 15.3675C19.3765 15.6139 19.1534 15.7848 18.8977 15.7848H7.63373C7.37803 15.7848 7.155 15.6139 7.08967 15.3675L4.83687 6.93071C4.79181 6.76197 4.82785 6.582 4.93486 6.44251ZM6.11421 7.34805L8.06627 14.6599H18.4652L20.4173 7.34805H6.11421Z" fill="#1A1A1E"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 3.97314H4.816C5.07395 3.97314 5.29923 4.14863 5.36231 4.39948L5.92551 6.64929L4.8329 6.92153L4.37671 5.09805H2V3.97314Z" fill="#1A1A1E"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.19677 18.5985C7.575 18.5985 7.07037 19.1025 7.07037 19.7234C7.07037 20.3444 7.575 20.8484 8.19677 20.8484C8.81855 20.8484 9.32318 20.3444 9.32318 19.7234C9.32318 19.1025 8.81855 18.5985 8.19677 18.5985ZM5.94397 19.7234C5.94397 18.4804 6.9521 17.4736 8.19677 17.4736C9.44145 17.4736 10.4496 18.4804 10.4496 19.7234C10.4496 20.9665 9.44145 21.9733 8.19677 21.9733C6.9521 21.9733 5.94397 20.9665 5.94397 19.7234Z" fill="#1A1A1E"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3346 18.5985C17.7128 18.5985 17.2082 19.1025 17.2082 19.7234C17.2082 20.3444 17.7128 20.8484 18.3346 20.8484C18.9564 20.8484 19.461 20.3444 19.461 19.7234C19.461 19.1025 18.9564 18.5985 18.3346 18.5985ZM16.0818 19.7234C16.0818 18.4804 17.0899 17.4736 18.3346 17.4736C19.5793 17.4736 20.5874 18.4804 20.5874 19.7234C20.5874 20.9665 19.5793 21.9733 18.3346 21.9733C17.0899 21.9733 16.0818 20.9665 16.0818 19.7234Z" fill="#1A1A1E"/>
+                                    </svg>                                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="menubox_top"></div>
+                <!-- 메인메뉴 -->
+                <div class="memu-box">
+                    <ul class="main-menu">
+                        <li data-tab="tab1"><a href="#none" class="menu">Story</a></li>
+                        <li data-tab="tab2"><a href="#none" class="menu">New</a></li>
+                        <li data-tab="tab3"><a href="#none" class="menu">Best</a></li>
+                        <li data-tab="tab4"><a href="#none" class="menu">Makeup</a></li>
+                        <li data-tab="tab5"><a href="#none" class="menu">Skin Care</a></li>
+                        <li data-tab="tab6"><a href="#none" class="menu">Fragment</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section sec-1">
+            <div class="container">
+                <!-- swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="sec-1_img">
+                                <img src="./images/main_slide1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sec-1_img">
+                                <img src="./images/main_slide2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sec-1_img">
+                                <img src="./images/main_slide3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sec-1_img">
+                                <img src="./images/main_slide4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="sec-1_img">
+                                <img src="./images/main_slide5.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="m_sec-1">
+                    <div class="m_header">
+                        <div class="m_inner">
+                            <div class="m_left">
+                                <!-- 햄버거버튼 -->
+                                <a href="#none" id="hamburger">
+                                    <span></span><span></span><span></span>
+                                </a>
+                            </div>
+                            <div class="m_right">
+                                <!-- 검색 -->
+                                <div class="icon">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.56811 4.98089C5.94551 4.98089 3.00908 7.91341 3.00908 11.5312C3.00908 15.149 5.94551 18.0815 9.56811 18.0815C13.1907 18.0815 16.1271 15.149 16.1271 11.5312C16.1271 7.91341 13.1907 4.98089 9.56811 4.98089ZM2 11.5312C2 7.35714 5.38849 3.97314 9.56811 3.97314C13.7477 3.97314 17.1362 7.35714 17.1362 11.5312C17.1362 15.7053 13.7477 19.0893 9.56811 19.0893C5.38849 19.0893 2 15.7053 2 11.5312Z" fill="#ffffff"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9719 16.2134L21.0264 22.2598L20.3119 22.9733L14.2574 16.9269L14.9719 16.2134Z" fill="#ffffff"/>
+                                    </svg>                                                                                
+                                </div>
+                                <!-- 회원 -->
+                                <div class="icon">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9058 4.02576C9.86837 4.02576 8.21673 5.6752 8.21673 7.7099C8.21673 9.7446 9.86837 11.394 11.9058 11.394C13.9432 11.394 15.5948 9.7446 15.5948 7.7099C15.5948 5.6752 13.9432 4.02576 11.9058 4.02576ZM7.16272 7.7099C7.16272 5.09416 9.28655 2.97314 11.9058 2.97314C14.525 2.97314 16.6488 5.09416 16.6488 7.7099C16.6488 10.3256 14.525 12.4467 11.9058 12.4467C9.28655 12.4467 7.16272 10.3256 7.16272 7.7099Z" fill="#ffffff"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4 18.7627C4 16.4375 5.88774 14.5522 8.21605 14.5522H15.5941C17.9224 14.5522 19.8102 16.4375 19.8102 18.7627V22.4468C19.8102 22.7374 19.5741 22.9731 19.2832 22.9731H4.52701C4.2361 22.9731 4 22.7374 4 22.4468V18.7627ZM8.21605 15.6049C6.46955 15.6049 5.05401 17.0185 5.05401 18.7627V21.9205H18.7562V18.7627C18.7562 17.0185 17.3406 15.6049 15.5941 15.6049H8.21605Z" fill="#ffffff"/>
+                                    </svg>
+                                </div>
+                                <!-- 장바구니 -->
+                                <div class="icon">
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.93486 6.44251C5.04074 6.30415 5.20633 6.22314 5.38092 6.22314H21.1505C21.3251 6.22314 21.4907 6.30415 21.5966 6.44251C21.7036 6.582 21.7397 6.76197 21.6946 6.93071L19.4418 15.3675C19.3765 15.6139 19.1534 15.7848 18.8977 15.7848H7.63373C7.37803 15.7848 7.155 15.6139 7.08967 15.3675L4.83687 6.93071C4.79181 6.76197 4.82785 6.582 4.93486 6.44251ZM6.11421 7.34805L8.06627 14.6599H18.4652L20.4173 7.34805H6.11421Z" fill="#ffffff"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2 3.97314H4.816C5.07395 3.97314 5.29923 4.14863 5.36231 4.39948L5.92551 6.64929L4.8329 6.92153L4.37671 5.09805H2V3.97314Z" fill="#ffffff"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.19677 18.5985C7.575 18.5985 7.07037 19.1025 7.07037 19.7234C7.07037 20.3444 7.575 20.8484 8.19677 20.8484C8.81855 20.8484 9.32318 20.3444 9.32318 19.7234C9.32318 19.1025 8.81855 18.5985 8.19677 18.5985ZM5.94397 19.7234C5.94397 18.4804 6.9521 17.4736 8.19677 17.4736C9.44145 17.4736 10.4496 18.4804 10.4496 19.7234C10.4496 20.9665 9.44145 21.9733 8.19677 21.9733C6.9521 21.9733 5.94397 20.9665 5.94397 19.7234Z" fill="#ffffff"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3346 18.5985C17.7128 18.5985 17.2082 19.1025 17.2082 19.7234C17.2082 20.3444 17.7128 20.8484 18.3346 20.8484C18.9564 20.8484 19.461 20.3444 19.461 19.7234C19.461 19.1025 18.9564 18.5985 18.3346 18.5985ZM16.0818 19.7234C16.0818 18.4804 17.0899 17.4736 18.3346 17.4736C19.5793 17.4736 20.5874 18.4804 20.5874 19.7234C20.5874 20.9665 19.5793 21.9733 18.3346 21.9733C17.0899 21.9733 16.0818 20.9665 16.0818 19.7234Z" fill="#ffffff"/>
+                                    </svg> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- m_swiper -->
+                    <div class="swiper mySwiper_m">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="sec-1_img">
+                                    <img src="./images/main_slide1_m.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sec-1_img">
+                                    <img src="./images/main_slide2_m.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sec-1_img">
+                                    <img src="./images/main_slide3_m.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sec-1_img">
+                                    <img src="./images/main_slide4_m.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sec-1_img">
+                                    <img src="./images/main_slide5_m.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section sec-2">
+            <div class="container">
+                <div class="sec-2-box">
+                    <div class="membership">
+                        <div class="txt">
+                            헤라 멤버십 라운지 가입하고 다양한 혜택을 받아보세요!!
+                        </div>
+                    </div>
+
+                    <div class="pc-corpon">
+                        <div class="couponbox">
+                            <div class="coupon">
+                                <div class="couponimg">
+                                    <img src="./images/coupon_bg1.jpg" alt="">
+                                </div>
+
+                                <div class="coupon_text">
+                                    <div class="text-head">
+                                        헤라 멤버십 가입혜택
+                                    </div>
+                                    <div class="text-body">
+                                        헤라 멤버십 가입 시 드리는<br>
+                                        5% 할인쿠폰
+                                    </div>
+                                    <div class="text-footer">
+                                        <div class="txt">#1초 간편가입</div>
+                                        <div class="txt">#아모레퍼시 통합</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="coupon">
+                                <div class="couponimg">
+                                    <img src="./images/coupon_bg2.jpg" alt="">
+                                </div>
+
+                                <div class="coupon_text">
+                                    <div class="text-head">
+                                        첫 구매 할인혜택
+                                    </div>
+                                    <div class="text-body">
+                                        첫 구매 시 3,000원 할인쿠폰
+                                    </div>
+                                    <div class="text-footer">
+                                        <div class="txt">#단, 3만원이상 구매 시에만 사용가능</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="coupon">
+                                <div class="couponimg">
+                                    <img src="./images/coupon_bg3.jpg" alt="">
+                                </div>
+
+                                <div class="coupon_text">
+                                    <div class="text-head">
+                                        베스트 리뷰어
+                                    </div>
+                                    <div class="text-body">
+                                        <div class="txt">
+                                            영상&포토 리뷰 시 포인트 500원 적립
+                                        </div>
+                                        <div class="txt">
+                                            베스트 립뷰어 5,000원 할인쿠폰 증정
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- m_swiper -->
+                    <div class="swiper mySwiper_m1">
+                       <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="couponimg">
+                                    <img src="./images/coupon_bg1.jpg" alt="">
+                                </div>
+
+                                <div class="text-box">
+                                    <div class="coupon_text">
+                                        <div class="text-head">
+                                            헤라 멤버십 가입혜택
+                                        </div>
+                                        <div class="text-body">
+                                            헤라 멤버십 가입 시 드리는<br>
+                                            5% 할인쿠폰
+                                        </div>
+                                        <div class="text-footer">
+                                            <div class="txt">#1초 간편가입</div>
+                                            <div class="txt">#아모레퍼시 통합</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="couponimg">
+                                    <img src="./images/coupon_bg2.jpg" alt="">
+                                </div>
+
+                                <div class="coupon_text">
+                                    <div class="text-head">
+                                        첫 구매 할인혜택
+                                    </div>
+                                    <div class="text-body">
+                                        첫 구매 시 3,000원 할인쿠폰
+                                    </div>
+                                    <div class="text-footer">
+                                        <div class="txt">#단, 3만원이상 구매 시에만 사용가능</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="couponimg">
+                                    <img src="./images/coupon_bg3.jpg" alt="">
+                                </div>
+
+                                <div class="coupon_text">
+                                    <div class="text-head">
+                                        베스트 리뷰어
+                                    </div>
+                                    <div class="text-body">
+                                        <div class="txt">
+                                            영상&포토 리뷰 시 포인트 500원 적립
+                                        </div>
+                                        <div class="txt">
+                                            베스트 립뷰어 5,000원 할인쿠폰 증정
+                                        </div>
+                                    </div>
+                                </div>
+                           </div>
+                       </div>
+                       <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="section sec-3">
+            <div class="container">
+                <div class="pc-3">
+                    <div class="box">
+                        <div class="sec-3-txt">
+                            <div class="sec-3-head">NEW 헤라 실키 스테이<br>
+                                24H 롱웨어 파운데이션 SPF 20/PA++</div>
+                            <div class="sec-3-body">Silky skin shat stays with you all day</div>
+                        </div>
+        
+                        <div class="sec-3_box">
+                            <div class="box">
+                                <div class="img">
+                                    <img src="./images/13N1.jpg" alt="">
+                                </div>
+                                <div class="txt">13N1 포슬린</div>
+                                <div class="button_box">
+                                    <div class="button_txt">구매하기</div>
+                                </div>
+                            </div>
+        
+                            <div class="box">
+                                <div class="img">
+                                    <img src="./images/19N1.jpg" alt="">
+                                </div>
+                                <div class="txt">19N1 라이트 바닐라</div>
+                                <div class="button_box">
+                                    <div class="button_txt">구매하기</div>
+                                </div>
+                            </div>
+        
+                            <div class="box">
+                                <div class="img">
+                                    <img src="./images/23N1.jpg" alt="">
+                                </div>
+                                <div class="txt">23N1 베이지</div>
+                                <div class="button_box">
+                                    <div class="button_txt">구매하기</div>
+                                </div>
+                            </div>
+        
+                            <div class="box">
+                                <div class="img">
+                                    <img src="./images/27N1.jpg" alt="">
+                                </div>
+                                <div class="txt">27N1 허니</div>
+                                <div class="button_box">
+                                    <div class="button_txt">구매하기</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="m_3">
+                    <div class="sec-3-txt">
+                        <div class="sec-3-head">NEW 헤라 실키 스테이<br>
+                            24H 롱웨어 파운데이션 SPF 20/PA++</div>
+                        <div class="sec-3-body">Silky skin shat stays with you all day</div>
+                    </div>
+                    <!-- m_swiper -->
+                    <div class="swiper mySwiper_m2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="./images/13N1_m.jpg" alt="">
+                                    </div>
+                                    <div class="txt">13N1 포슬린</div>
+                                    <div class="button_box">
+                                        <div class="button_txt">구매하기</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="./images/19N1.jpg" alt="">
+                                    </div>
+                                    <div class="txt">19N1 라이트 바닐라</div>
+                                    <div class="button_box">
+                                        <div class="button_txt">구매하기</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="./images/23N1.jpg" alt="">
+                                    </div>
+                                    <div class="txt">23N1 베이지</div>
+                                    <div class="button_box">
+                                        <div class="button_txt">구매하기</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="./images/27N1.jpg" alt="">
+                                    </div>
+                                    <div class="txt">27N1 허니</div>
+                                    <div class="button_box">
+                                        <div class="button_txt">구매하기</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section sec-4">
+            <div class="container">
+                <div class="sec-4-txt">NEW ITEM</div>
+               
+               <div class="swiper-box">
+
+                    <div class="swiper mySwiper1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide_bg">
+                                    <div class="slide-img">
+                                        <img src="./images/new1.jpg" alt="">
+                                    </div>
+                                    <div class="like">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.1976 12.5442L20.1546 12.5946L20.1296 12.6474L12 20.4914L3.8704 12.6474L3.84538 12.5946L3.80236 12.5442C1.94838 10.3712 2.07352 7.15442 4.17967 5.12189C6.23143 3.14191 9.4539 2.97384 11.7045 4.6226L12 4.83907L12.2955 4.6226C14.5461 2.97384 17.7686 3.14191 19.8203 5.12188C21.9265 7.15442 22.0516 10.3712 20.1976 12.5442Z" stroke="#6A6A6A"/>
+                                        </svg>
+                                    </div>
+                                    <div class="text-box">
+                                        <div class="box">
+                                            <div class="txt1">UV프로텍터 익스트림포스 레포츠 SPF50</div>
+                                            <div class="txt2_box">
+                                                <div class="txt">15%</div>
+                                                <div class="txt_1">38,250원</div>
+                                                <div class="txt_2">45,000원</div>
+                                            </div>
+                                            <div class="txt3">평점 4.4 / 리뷰 7</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="slide_bg">
+                                    <div class="slide-img">
+                                        <img src="./images/new2.jpg" alt="">
+                                    </div>
+                                    <div class="like">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.1976 12.5442L20.1546 12.5946L20.1296 12.6474L12 20.4914L3.8704 12.6474L3.84538 12.5946L3.80236 12.5442C1.94838 10.3712 2.07352 7.15442 4.17967 5.12189C6.23143 3.14191 9.4539 2.97384 11.7045 4.6226L12 4.83907L12.2955 4.6226C14.5461 2.97384 17.7686 3.14191 19.8203 5.12188C21.9265 7.15442 22.0516 10.3712 20.1976 12.5442Z" stroke="#6A6A6A"/>
+                                        </svg>
+                                    </div>
+                                    <div class="text-box">
+                                        <div class="box">
+                                            <div class="txt1">스킨 틴트 컴피 스프레더 SP50/PA++++ 15g</div>
+                                            <div class="txt2_box">
+                                                <div class="txt">15%</div>
+                                                <div class="txt_1">59,500원</div>
+                                                <div class="txt_2">70,000원</div>
+                                            </div>
+                                            <div class="txt3">평점 4.6 / 리뷰 74</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="slide_bg">
+                                    <div class="slide-img">
+                                        <img src="./images/new3.jpg" alt="">
+                                    </div>
+                                    <div class="like">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.1976 12.5442L20.1546 12.5946L20.1296 12.6474L12 20.4914L3.8704 12.6474L3.84538 12.5946L3.80236 12.5442C1.94838 10.3712 2.07352 7.15442 4.17967 5.12189C6.23143 3.14191 9.4539 2.97384 11.7045 4.6226L12 4.83907L12.2955 4.6226C14.5461 2.97384 17.7686 3.14191 19.8203 5.12188C21.9265 7.15442 22.0516 10.3712 20.1976 12.5442Z" stroke="#6A6A6A"/>
+                                        </svg>
+                                    </div>
+                                    <div class="text-box">
+                                        <div class="box">
+                                            <div class="txt1">컴피 리바이탈라이징 세럼 미스트 90ml</div>
+                                            <div class="txt2_box">
+                                                <div class="txt">15%</div>
+                                                <div class="txt_1">69,700원</div>
+                                                <div class="txt_2">82,000원</div>
+                                            </div>
+                                            <div class="txt3">평점 4.7 / 리뷰 74</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="slide_bg">
+                                    <div class="slide-img">
+                                        <img src="./images/new4.jpg" alt="">
+                                    </div>
+                                    <div class="like">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.1976 12.5442L20.1546 12.5946L20.1296 12.6474L12 20.4914L3.8704 12.6474L3.84538 12.5946L3.80236 12.5442C1.94838 10.3712 2.07352 7.15442 4.17967 5.12189C6.23143 3.14191 9.4539 2.97384 11.7045 4.6226L12 4.83907L12.2955 4.6226C14.5461 2.97384 17.7686 3.14191 19.8203 5.12188C21.9265 7.15442 22.0516 10.3712 20.1976 12.5442Z" stroke="#6A6A6A"/>
+                                        </svg>
+                                    </div>
+                                    <div class="text-box">
+                                        <div class="box">
+                                            <div class="txt1">NEW 루즈 클래시 3.5g</div>
+                                            <div class="txt2_box">
+                                                <div class="txt">10%</div>
+                                                <div class="txt_1">45,000원</div>
+                                                <div class="txt_2">50,000원</div>
+                                            </div>
+                                            <div class="txt3">평점 4.7 / 리뷰 188</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="slide_bg">
+                                    <div class="slide-img">
+                                        <img src="./images/new5.jpg" alt="">
+                                    </div>
+                                    <div class="like">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.1976 12.5442L20.1546 12.5946L20.1296 12.6474L12 20.4914L3.8704 12.6474L3.84538 12.5946L3.80236 12.5442C1.94838 10.3712 2.07352 7.15442 4.17967 5.12189C6.23143 3.14191 9.4539 2.97384 11.7045 4.6226L12 4.83907L12.2955 4.6226C14.5461 2.97384 17.7686 3.14191 19.8203 5.12188C21.9265 7.15442 22.0516 10.3712 20.1976 12.5442Z" stroke="#6A6A6A"/>
+                                        </svg>
+                                    </div>
+                                    <div class="text-box">
+                                        <div class="box">
+                                            <div class="txt1">글로우 래스팅 파운데이션 SPF22 / PA++ 30g</div>
+                                            <div class="txt2_box">
+                                                <div class="txt">10%</div>
+                                                <div class="txt_1">63,000원</div>
+                                                <div class="txt_2">70,000원</div>
+                                            </div>
+                                            <div class="txt3">평점 4.7 / 리뷰 337</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="slide_bg">
+                                    <div class="slide-img">
+                                        <img src="./images/new6.jpg" alt="">
+                                    </div>
+                                    <div class="like">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.1976 12.5442L20.1546 12.5946L20.1296 12.6474L12 20.4914L3.8704 12.6474L3.84538 12.5946L3.80236 12.5442C1.94838 10.3712 2.07352 7.15442 4.17967 5.12189C6.23143 3.14191 9.4539 2.97384 11.7045 4.6226L12 4.83907L12.2955 4.6226C14.5461 2.97384 17.7686 3.14191 19.8203 5.12188C21.9265 7.15442 22.0516 10.3712 20.1976 12.5442Z" stroke="#6A6A6A"/>
+                                        </svg>
+                                    </div>
+                                    <div class="text-box">
+                                        <div class="box">
+                                            <div class="txt1">크리미 커버 컨실러 7.5g</div>
+                                            <div class="txt2_box">
+                                                <div class="txt">15%</div>
+                                                <div class="txt_1">38,250원</div>
+                                                <div class="txt_2">45,000원</div>
+                                            </div>
+                                            <div class="txt3">평점 4.7 / 리뷰 220</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="slide_bg">
+                                    <div class="slide-img">
+                                        <img src="./images/new7.jpg" alt="">
+                                    </div>
+                                    <div class="like">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.1976 12.5442L20.1546 12.5946L20.1296 12.6474L12 20.4914L3.8704 12.6474L3.84538 12.5946L3.80236 12.5442C1.94838 10.3712 2.07352 7.15442 4.17967 5.12189C6.23143 3.14191 9.4539 2.97384 11.7045 4.6226L12 4.83907L12.2955 4.6226C14.5461 2.97384 17.7686 3.14191 19.8203 5.12188C21.9265 7.15442 22.0516 10.3712 20.1976 12.5442Z" stroke="#6A6A6A"/>
+                                        </svg>
+                                    </div>
+                                    <div class="text-box">
+                                        <div class="box">
+                                            <div class="txt1">시그니아 리커버리 컨센트레이트</div>
+                                            <div class="txt2_box">
+                                                <div class="txt">15%</div>
+                                                <div class="txt_1">272,000원</div>
+                                                <div class="txt_2">320,000원</div>
+                                            </div>
+                                            <div class="txt3">평점 4.7 / 리뷰 24</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="slide_bg">
+                                    <div class="slide-img">
+                                        <img src="./images/new8.jpg" alt="">
+                                    </div>
+                                    <div class="like">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.1976 12.5442L20.1546 12.5946L20.1296 12.6474L12 20.4914L3.8704 12.6474L3.84538 12.5946L3.80236 12.5442C1.94838 10.3712 2.07352 7.15442 4.17967 5.12189C6.23143 3.14191 9.4539 2.97384 11.7045 4.6226L12 4.83907L12.2955 4.6226C14.5461 2.97384 17.7686 3.14191 19.8203 5.12188C21.9265 7.15442 22.0516 10.3712 20.1976 12.5442Z" stroke="#6A6A6A"/>
+                                        </svg>
+                                    </div>
+                                    <div class="text-box">
+                                        <div class="box">
+                                            <div class="txt1">센슈얼 피팅 글로우틴트 5g</div>
+                                            <div class="txt2_box">
+                                                <div class="txt">10%</div>
+                                                <div class="txt_1">36,000원</div>
+                                                <div class="txt_2">40,000원</div>
+                                            </div>
+                                            <div class="txt3">평점 4.7 / 리뷰 609</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-prev1">
+                        <img src="./images/prev.svg" alt="">
+                    </div>
+                    <div class="swiper-next1">
+                        <img src="./images/next.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section sec-5">
+            <div class="container">
+                <img src="./images/advertisement.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="section sec-6">
+            <div class="container">
+                <div class="sec-6-txt">BEST ITEM</div>
+                <div class="txt-box">
+                    <div class="txt1">
+                        <div class="txt">전체</div>
+                        <div class="solid1"></div>
+                    </div>
+                    <div class="txt1">
+                        <div class="txt">메이크업</div>
+                        <div class="solid2"></div>
+                    </div>
+                    <div class="txt1">
+                        <div class="txt">스킨케어</div>
+                        <div class="solid3"></div>
+                    </div>
+                    <div class="txt1">
+                        <div class="txt">프래그런스</div>
+                        <div class="solid4"></div>
+                    </div>
+                </div>
+                
+                <div class="swiper-box">
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide_bg">
+                                    <div class="slide-img">
+                                        <img src="./images/best1.jpg" alt="">
+                                        <div class="like">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20.1976 12.5442L20.1546 12.5946L20.1296 12.6474L12 20.4914L3.8704 12.6474L3.84538 12.5946L3.80236 12.5442C1.94838 10.3712 2.07352 7.15442 4.17967 5.12189C6.23143 3.14191 9.4539 2.97384 11.7045 4.6226L12 4.83907L12.2955 4.6226C14.5461 2.97384 17.7686 3.14191 19.8203 5.12188C21.9265 7.15442 22.0516 10.3712 20.1976 12.5442Z" stroke="#6A6A6A"/>
+                                            </svg>
+                                        </div>
+                                        <div class="ranking">
+                                            <img src="./images/1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <div class="box">
+                                            <div class="txt1">실키 스테이 24H 롱웨어 파운데이션 SPF20/PA++ 30g</div>
+                                            <div class="txt2_box">
+                                                <div class="txt">10%</div>
+                                                <div class="txt_1">63,000원</div>
+                                                <div class="txt_2">70,000원</div>
+                                            </div>
+                                            <div class="txt3">평점 4.8 / 리뷰 3,080</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="slide_bg">
+                                    <div class="slide-img">
+                                        <img src="./images/best2.jpg" alt="">
+                                        <div class="like">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20.1976 12.5442L20.1546 12.5946L20.1296 12.6474L12 20.4914L3.8704 12.6474L3.84538 12.5946L3.80236 12.5442C1.94838 10.3712 2.07352 7.15442 4.17967 5.12189C6.23143 3.14191 9.4539 2.97384 11.7045 4.6226L12 4.83907L12.2955 4.6226C14.5461 2.97384 17.7686 3.14191 19.8203 5.12188C21.9265 7.15442 22.0516 10.3712 20.1976 12.5442Z" stroke="#6A6A6A"/>
+                                            </svg>
+                                        </div>
+                                        <div class="ranking">
+                                            <img src="./images/2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <div class="box">
+                                            <div class="txt1">블랙 쿠션 SPF34/PA++ (본품 15g+리필15g)</div>
+                                            <div class="txt2_box">
+                                                <div class="txt">10%</div>
+                                                <div class="txt_1">59,400원</div>
+                                                <div class="txt_2">66,000원</div>
+                                            </div>
+                                            <div class="txt3">평점 4.8 / 리뷰 16,928</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="slide_bg">
+                                    <div class="slide-img">
+                                        <img src="./images/best3.jpg" alt="">
+                                        <div class="like">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20.1976 12.5442L20.1546 12.5946L20.1296 12.6474L12 20.4914L3.8704 12.6474L3.84538 12.5946L3.80236 12.5442C1.94838 10.3712 2.07352 7.15442 4.17967 5.12189C6.23143 3.14191 9.4539 2.97384 11.7045 4.6226L12 4.83907L12.2955 4.6226C14.5461 2.97384 17.7686 3.14191 19.8203 5.12188C21.9265 7.15442 22.0516 10.3712 20.1976 12.5442Z" stroke="#6A6A6A"/>
+                                            </svg>
+                                        </div>
+                                        <div class="ranking">
+                                            <img src="./images/3.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <div class="box">
+                                            <div class="txt1">센슈얼 누드 글로스 5g</div>
+                                            <div class="txt2_box">
+                                                <div class="txt">10%</div>
+                                                <div class="txt_1">36,000원</div>
+                                                <div class="txt_2">40,000원</div>
+                                            </div>
+                                            <div class="txt3">평점 4.8 / 리뷰 2,501</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="slide_bg">
+                                    <div class="slide-img">
+                                        <img src="./images/best4.jpg" alt="">
+                                        <div class="like">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20.1976 12.5442L20.1546 12.5946L20.1296 12.6474L12 20.4914L3.8704 12.6474L3.84538 12.5946L3.80236 12.5442C1.94838 10.3712 2.07352 7.15442 4.17967 5.12189C6.23143 3.14191 9.4539 2.97384 11.7045 4.6226L12 4.83907L12.2955 4.6226C14.5461 2.97384 17.7686 3.14191 19.8203 5.12188C21.9265 7.15442 22.0516 10.3712 20.1976 12.5442Z" stroke="#6A6A6A"/>
+                                            </svg>
+                                        </div>
+                                        <div class="ranking">
+                                            <img src="./images/4.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <div class="box">
+                                            <div class="txt1">UV프로텍터 톤업 SPF50+/PA++++ 50ml</div>
+                                            <div class="txt2_box">
+                                                <div class="txt">10%</div>
+                                                <div class="txt_1">40,500원</div>
+                                                <div class="txt_2">45,000원</div>
+                                            </div>
+                                            <div class="txt3">평점 4.8 / 리뷰 4,192</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="slide_bg">
+                                    <div class="slide-img">
+                                        <img src="./images/best5.jpg" alt="">
+                                        <div class="like">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20.1976 12.5442L20.1546 12.5946L20.1296 12.6474L12 20.4914L3.8704 12.6474L3.84538 12.5946L3.80236 12.5442C1.94838 10.3712 2.07352 7.15442 4.17967 5.12189C6.23143 3.14191 9.4539 2.97384 11.7045 4.6226L12 4.83907L12.2955 4.6226C14.5461 2.97384 17.7686 3.14191 19.8203 5.12188C21.9265 7.15442 22.0516 10.3712 20.1976 12.5442Z" stroke="#6A6A6A"/>
+                                            </svg>
+                                        </div>
+                                        <div class="ranking">
+                                            <img src="./images/5.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <div class="box">
+                                            <div class="txt1">[리필] 블랙 쿠션 SPF34/PA++ 15g</div>
+                                            <div class="txt2_box">
+                                                <div class="txt">10%</div>
+                                                <div class="txt_1">29,700원</div>
+                                                <div class="txt_2">33,000원</div>
+                                            </div>
+                                            <div class="txt3">평점 4.8 / 리뷰 6,601</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="slide_bg">
+                                    <div class="slide-img">
+                                        <img src="./images/best6.jpg" alt="">
+                                        <div class="like">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20.1976 12.5442L20.1546 12.5946L20.1296 12.6474L12 20.4914L3.8704 12.6474L3.84538 12.5946L3.80236 12.5442C1.94838 10.3712 2.07352 7.15442 4.17967 5.12189C6.23143 3.14191 9.4539 2.97384 11.7045 4.6226L12 4.83907L12.2955 4.6226C14.5461 2.97384 17.7686 3.14191 19.8203 5.12188C21.9265 7.15442 22.0516 10.3712 20.1976 12.5442Z" stroke="#6A6A6A"/>
+                                            </svg>
+                                        </div>
+                                        <div class="ranking">
+                                            <img src="./images/6.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <div class="box">
+                                            <div class="txt1">[기획] 옴므 스페셜 기획세트 2종(125ml+110ml)</div>
+                                            <div class="txt2_box">
+                                                <div class="txt">15%</div>
+                                                <div class="txt_1">74,800원</div>
+                                                <div class="txt_2">88,000원</div>
+                                            </div>
+                                            <div class="txt3">평점 4.8 / 리뷰 3,055</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="slide_bg">
+                                    <div class="slide-img">
+                                        <img src="./images/best7.jpg" alt="">
+                                        <div class="like">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20.1976 12.5442L20.1546 12.5946L20.1296 12.6474L12 20.4914L3.8704 12.6474L3.84538 12.5946L3.80236 12.5442C1.94838 10.3712 2.07352 7.15442 4.17967 5.12189C6.23143 3.14191 9.4539 2.97384 11.7045 4.6226L12 4.83907L12.2955 4.6226C14.5461 2.97384 17.7686 3.14191 19.8203 5.12188C21.9265 7.15442 22.0516 10.3712 20.1976 12.5442Z" stroke="#6A6A6A"/>
+                                            </svg>
+                                        </div>
+                                        <div class="ranking">
+                                            <img src="./images/7.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <div class="box">
+                                            <div class="txt1">센슈얼 누드 밤 3.5g</div>
+                                            <div class="txt2_box">
+                                                <div class="txt">10%</div>
+                                                <div class="txt_1">36,000원</div>
+                                                <div class="txt_2">40,000원</div>
+                                            </div>
+                                            <div class="txt3">평점 4.8 / 리뷰 1,942</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="slide_bg">
+                                    <div class="slide-img">
+                                        <img src="./images/best8.jpg" alt="">
+                                        <div class="like">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20.1976 12.5442L20.1546 12.5946L20.1296 12.6474L12 20.4914L3.8704 12.6474L3.84538 12.5946L3.80236 12.5442C1.94838 10.3712 2.07352 7.15442 4.17967 5.12189C6.23143 3.14191 9.4539 2.97384 11.7045 4.6226L12 4.83907L12.2955 4.6226C14.5461 2.97384 17.7686 3.14191 19.8203 5.12188C21.9265 7.15442 22.0516 10.3712 20.1976 12.5442Z" stroke="#6A6A6A"/>
+                                            </svg>
+                                        </div>
+                                        <div class="ranking">
+                                            <img src="./images/8.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <div class="box">
+                                            <div class="txt1">UV프로텍터 멀티디펜스 SPF50+/PA++++ 50ml</div>
+                                            <div class="txt2_box">
+                                                <div class="txt">15%</div>
+                                                <div class="txt_1">38,250원</div>
+                                                <div class="txt_2">45,000원</div>
+                                            </div>
+                                            <div class="txt3">평점 4.8 / 리뷰 5,636</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="slide_bg">
+                                    <div class="slide-img">
+                                        <img src="./images/best9.jpg" alt="">
+                                        <div class="like">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20.1976 12.5442L20.1546 12.5946L20.1296 12.6474L12 20.4914L3.8704 12.6474L3.84538 12.5946L3.80236 12.5442C1.94838 10.3712 2.07352 7.15442 4.17967 5.12189C6.23143 3.14191 9.4539 2.97384 11.7045 4.6226L12 4.83907L12.2955 4.6226C14.5461 2.97384 17.7686 3.14191 19.8203 5.12188C21.9265 7.15442 22.0516 10.3712 20.1976 12.5442Z" stroke="#6A6A6A"/>
+                                            </svg>
+                                        </div>
+                                        <div class="ranking">
+                                            <img src="./images/9.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <div class="box">
+                                            <div class="txt1">글로우 래스팅 파운데이션 SPF22 / PA++ 30g</div>
+                                            <div class="txt2_box">
+                                                <div class="txt">10%</div>
+                                                <div class="txt_1">63,000원</div>
+                                                <div class="txt_2">70,000원</div>
+                                            </div>
+                                            <div class="txt3">평점 4.7 / 리뷰 338</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="slide_bg">
+                                    <div class="slide-img">
+                                        <img src="./images/best10.jpg" alt="">
+                                        <div class="like">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20.1976 12.5442L20.1546 12.5946L20.1296 12.6474L12 20.4914L3.8704 12.6474L3.84538 12.5946L3.80236 12.5442C1.94838 10.3712 2.07352 7.15442 4.17967 5.12189C6.23143 3.14191 9.4539 2.97384 11.7045 4.6226L12 4.83907L12.2955 4.6226C14.5461 2.97384 17.7686 3.14191 19.8203 5.12188C21.9265 7.15442 22.0516 10.3712 20.1976 12.5442Z" stroke="#6A6A6A"/>
+                                            </svg>
+                                        </div>
+                                        <div class="ranking">
+                                            <img src="./images/10.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="text-box">
+                                        <div class="box">
+                                            <div class="txt1">스킨 래디언트 글로우 쿠션 SPF40 / PA++</div>
+                                            <div class="txt2_box">
+                                                <div class="txt">10%</div>
+                                                <div class="txt_1">61,200원</div>
+                                                <div class="txt_2">68,000원</div>
+                                            </div>
+                                            <div class="txt3">평점 4.8 / 리뷰 1,398</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-prev">
+                        <img src="./images/prev.svg" alt="">
+                    </div>
+                    <div class="swiper-next">
+                        <img src="./images/next.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+           
+        <section class="section sec-7">
+            <div class="container">
+                <div class="sec-7 txt">CATEGORY</div>
+
+                <div class="pc_7">
+                    <div class="sec-7_box">
+                        <div class="box">
+                            <div class="img">
+                                <img src="./images/face.jpg" alt="">
+                            </div>
+                            <div class="text-box">
+                                <div class="sec7-head">페이스 메이크업</div>
+                                <div class="sec7-body">핵심적인 텍스처로 가볍고 섬세한 베이스 메이크업을 연출하는 페이스 메이크업 컬렉션</div>
+                                <div class="button">전체보기</div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="img">
+                                <img src="./images/lip.jpg" alt="">
+                            </div>
+                            <div class="text-box">
+                                <div class="sec7-head">립 메이크업</div>
+                                <div class="sec7-body">은은한 컬러부터 과감한 컬러까지 다양하게, 생기가 가득하고 광택있는 립 메이크업 컬렉션 </div>
+                                <div class="button">전체보기</div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="img">
+                                <img src="./images/eye.jpg" alt="">
+                            </div>
+                            <div class="text-box">
+                                <div class="sec7-head">아이 메이크업</div>
+                                <div class="sec7-body">밋밋한 눈을 또렷하게 만들어주고 데일리한 눈부터 화려한 눈까지 연출시켜주는 아이 메이크업 컬렉션</div>
+                                <div class="button">전체보기</div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="img">
+                                <img src="./images/skincare.jpg" alt="">
+                            </div>
+                            <div class="text-box">
+                                <div class="sec7-head">스킨케어</div>
+                                <div class="sec7-body">피부결을 매끈하고 깨끗하게 가꾸어 주고 수분과 보습을 적절하게 밸런스를 맞추어주는 스킨케어 </div>
+                                <div class="button">전체보기</div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="img">
+                                <img src="./images/perfume.jpg" alt="">
+                            </div>
+                            <div class="text-box">
+                                <div class="sec7-head">향수</div>
+                                <div class="sec7-body">머스크 베이스와 생기 넘치는 그린 플로럴 노트의 조화로 여성의 자신감을 담아낸 풍부한 깊이감의 향수</div>
+                                <div class="button">전체보기</div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="img">
+                                <img src="./images/body.jpg" alt="">
+                            </div>
+                            <div class="text-box">
+                                <div class="sec7-head">바디</div>
+                                <div class="sec7-body">다양한 향이 첨부되어있고 깨끗하고 촉촉한 피부를 유지시켜주는 부드러운 바디제품</div>
+                                <div class="button">전체보기</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="m_4">
+                    <!-- m_swiper -->
+                    <div class="swiper mySwiper_m3">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="./images/face.jpg" alt="">
+                                    </div>
+                                    <div class="text-box">
+                                        <div class="sec7-head">페이스 메이크업</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="./images/lip.jpg" alt="">
+                                    </div>
+                                    <div class="text-box">
+                                        <div class="sec7-head">립 메이크업</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="./images/eye.jpg" alt="">
+                                    </div>
+                                    <div class="text-box">
+                                        <div class="sec7-head">아이 메이크업</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="./images/skincare.jpg" alt="">
+                                    </div>
+                                    <div class="text-box">
+                                        <div class="sec7-head">스킨케어</div>
+                                    </div>
+                                </div>    
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="./images/perfume.jpg" alt="">
+                                    </div>
+                                    <div class="text-box">
+                                        <div class="sec7-head">향수</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="box">
+                                    <div class="img">
+                                        <img src="./images/body.jpg" alt="">
+                                    </div>
+                                    <div class="text-box">
+                                        <div class="sec7-head">바디</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-next2">
+                        <img src="./images/next.svg" alt="">
+                    </div>
+                    <div class="swiper-prev2">
+                        <img src="./images/prev.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer bg">
+            <div class="container">
+                <div class="footer_top">
+                    <div class="logo-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 434 80" style="enable-background:new 0 0 434 80;" xml:space="preserve" class="logo-img svg replaced-svg" preserveAspectRatio="xMinYMin" focusable="false">
+                            <style type="text/css">
+                                .st0{fill:#fff;}
+                            </style>
+                            <g>
+                                <path class="st0" d="M415.31,79.28h16.59L399.15,1.3l-15.96,0.02c0.94,2.68-0.7,7.88-2.46,12.42l-26.31,65.54h9.24l11.61-28.46   h28.46L415.31,79.28z M377.92,44.3l11.58-28.4l11.57,28.4H377.92z"></path>
+                                <path class="st0" d="M147.89,42.51h33.47v-5.59h-33.47V6.89h37.87V1.3L129.9,1.32c0,0,1.68,2.95,1.68,11.1V79.3h55.23v-5.58h-38.93   V42.51z"></path>
+                                <path class="st0" d="M54.34,36.92H19.89V1.32H1.9c0,0,1.68,2.95,1.68,11.1V79.3h16.31V43.18h34.45V79.3h16.31V1.32H54.34V36.92z"></path>
+                                <path class="st0" d="M282.01,40.81c3.46-1.1,7.02-2.74,10.39-5.25c12.05-9,9.04-24.34,1.06-29.42c-5.14-3.27-10.22-4.84-20.3-4.84   h-31.92c0,0,1.68,2.95,1.68,11.1v66.88h16.35V42.84h4.31c0.24,0,0.52,0,0.83,0.01c4.85,0.32,7.5,1.75,11.63,7.09l20.29,29.34h16.61   c0,0-21.68-30.13-23.48-32.46C287.92,44.81,285.47,41.85,282.01,40.81 M263.01,37.33h-3.74V6.75h3.52c5.76,0,14.18,0.07,18.5,6.51   c4.11,6.13,2.74,13.29-0.29,17.38C277.25,35.72,273.05,37.33,263.01,37.33"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="text-box">
+                        <div class="box">
+                            <h1>CUSTOMER SERVICE</h1>
+                            <p><a href="#none">080-023-5454 (제품문의)</a></p>
+                            <p><a href="#none">080-030-5454 (쇼핑문의)</a></p>
+                            <p><a href="#none">support_kr@amoremall.com (주문/배송/쇼핑 문의)</a></p>
+                            <p><a href="#none">MON-FRI : AM 09:00 ~ PM 06:00</a></p>
+                        </div>
+
+                        <div class="m_menu">
+                            <ul class="footer-menu_m">
+                                <div class="menu_top">
+                                    <li><a href="#none">서비스 이용약관</a></li>
+                                    <li><a href="#none">UCC 이용약관</a></li>
+                                    <li><a href="#none">개인정보처리방침</a></li>
+                                </div>
+                                <div class="menu_bottom">
+                                    <li><a href="#none">영상정보처리방침</a></li>
+                                    <li><a href="#none">헤라멤버십</a></li>
+                                    <li><a href="#none">사이트맵</a></li>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <div class="box">
+                            <div class="txt">
+                                <div class="txt1">COMPANY</div>
+                                <div class="txt2">(주)아모레퍼시픽</div>
+                            </div>
+                            <div class="txt">
+                                <div class="txt1">CEO</div>
+                                <div class="txt2">김승환</div>
+                            </div>
+                            <div class="txt">
+                                <div class="txt1">BRN</div>
+                                <div class="txt2">106-86-43373</div>
+                            </div>
+                            <div class="txt">
+                                <div class="txt1">ADDRESS</div>
+                                <div class="txt2">서울특별시 용산구 한강대로 100 (한강로2가)</div>
+                            </div>
+                            <div class="txt">
+                                <div class="txt1">E.MAIL</div>
+                                <div class="txt2">biz_amoremall@amorepacific.com (비즈니스 문의)</div>
+                            </div>
+                            <div class="txt">
+                                <div class="txt1">BUSINESS LICENSE</div>
+                                <div class="txt2">2017-서울용산-1308</div>
+                            </div>
+                            <div class="txt">
+                                <div class="txt1">건강기능식품판매업 영업신고증 제8호</div>
+                            </div>
+                            <div class="txt">
+                                <div class="txt1">Hosting</div>
+                                <div class="txt2">(주)아모레퍼시픽</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">  
+                    <div class="footer-right">
+                        <ul class="footer-menu">
+                            <li><a href="#none">서비스 이용약관</a></li>
+                            <li><a href="#none">UCC 이용약관</a></li>
+                            <li><a href="#none">개인정보처리방침</a></li>
+                            <li><a href="#none">영상정보처리방침</a></li>
+                            <li><a href="#none">헤라멤버십</a></li>
+                            <li><a href="#none">사이트맵</a></li>
+                        </ul>
+
+                        <div class="sns-box">
+                            <div class="icon">
+                                <img src="./images/Facebook.svg" alt="">
+                            </div>
+                            <div class="icon">
+                                <img src="./images/youtube.svg" alt="">
+                            </div>
+                            <div class="icon">
+                                <img src="./images/Instagram.svg" alt="">
+                            </div>
+                            <div class="icon">
+                                <img src="./images/kakaotalk.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-left">
+                        <small class="copyright">© AMOREPACIFIC CORPORATION. All rights reserved. </small>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div> 
+</body>
+</html>
